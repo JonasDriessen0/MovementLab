@@ -7284,13 +7284,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   gravity: -19.62
-  jumpHeight: 2
+  jumpHeight: 1.6
   groundCheck: {fileID: 6698760858205864528}
-  groundDistance: 0.4
+  groundDistance: 0.2
   groundMask:
     serializedVersion: 2
     m_Bits: 128
   animator: {fileID: 1801023683261835644}
+  gunAnimator: {fileID: 6165070963074237479}
   controller: {fileID: 5135580727655591248}
   cam: {fileID: 615570635007705842}
 --- !u!1 &9187415130315171116

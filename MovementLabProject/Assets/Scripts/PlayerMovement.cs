@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Refrences")]
     public Animator animator;
+    public Animator gunAnimator;
     public CharacterController controller;
     public Camera cam;
 
@@ -44,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
 
             animator.SetTrigger("Jump");
+            gunAnimator.SetTrigger("Jump");
         }
 
         velocity.y += gravity * Time.deltaTime;
